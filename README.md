@@ -2,7 +2,7 @@
 
 # 
 
-# &gt;版本：v1.0.0.20170220
+# &gt;版本：v1.0.0.20170301
 
 # &gt;
 
@@ -38,7 +38,7 @@
 
 # client\_id\| string \| 客户端ID
 
-# timestamp\| int \| 接口调用当前时间的时间戳，误差在五分钟之内 
+# timestamp\| int \| 接口调用当前时间的时间戳，误差在五分钟之内
 
 # sign\| string \| 参数签名
 
@@ -48,11 +48,11 @@
 
 # {
 
-#     "client\_id": "iotacc108b7305fhzljeux0",
+# "client\_id": "iotacc108b7305fhzljeux0",
 
-#     "timestamp": 1487560009, 
+# "timestamp": 1487560009,
 
-#     "sng": "E1F082F33F77A749D90631862A122A624ED04542" 
+# "sng": "E1F082F33F77A749D90631862A122A624ED04542"
 
 # }
 
@@ -70,11 +70,11 @@
 
 # {
 
-#     "errcode": 0,
+# "errcode": 0,
 
-#     "errmsg": "success",
+# "errmsg": "success",
 
-#     "data": \[\]
+# "data": \[\]
 
 # }
 
@@ -86,9 +86,9 @@
 
 # {
 
-#     "errcode": 50000,
+# "errcode": 50000,
 
-#     "errmsg": "未知错误"
+# "errmsg": "未知错误"
 
 # }
 
@@ -124,99 +124,99 @@
 
 # 
 
-# \* 签名 php demo 
+# \* 签名 php demo
 
 # \`\`\`php
 
-#     /\*\*
+# /\*\*
 
-#      \* 作用：格式化参数，签名过程需要使用
+# \* 作用：格式化参数，签名过程需要使用
 
-#      \*/
+# \*/
 
-#     protected function formatBizQueryParaMap\($paraMap\)
+# protected function formatBizQueryParaMap\($paraMap\)
 
-#     {
+# {
 
-#         $buff = "";
+# $buff = "";
 
-#         foreach \($paraMap as $k =&gt; $v\) {
+# foreach \($paraMap as $k =&gt; $v\) {
 
-#             $buff .= $k . "=" . $v . "&";
+# $buff .= $k . "=" . $v . "&";
 
-#         }
+# }
 
-#         $reqPar;
+# $reqPar;
 
-#         if \(strlen\($buff\) &gt; 0\) {
+# if \(strlen\($buff\) &gt; 0\) {
 
-#             $reqPar = substr\($buff, 0, -1\);
+# $reqPar = substr\($buff, 0, -1\);
 
-#         }
+# }
 
-#         return $reqPar;
+# return $reqPar;
 
-#     }
+# }
 
 # 
 
-#     /\*\*
+# /\*\*
 
-#      \* 作用：生成签名
+# \* 作用：生成签名
 
-#      \*/
+# \*/
 
-#     protected function getSign\(data, $secret\)
+# protected function getSign\(data, $secret\)
 
-#     {
+# {
 
-#         foreach \(data as $key =&gt; $val\) {
+# foreach \(data as $key =&gt; $val\) {
 
-#             $Parameters\[$key\] = $val;
+# $Parameters\[$key\] = $val;
 
-#         }
+# }
 
-#         //签名步骤一：按字典序排序参数并拼接
+# //签名步骤一：按字典序排序参数并拼接
 
-#         ksort\($Parameters\);
+# ksort\($Parameters\);
 
-#         $string = formatBizQueryParaMap\($Parameters, false\);
+# $string = formatBizQueryParaMap\($Parameters, false\);
 
-#         //签名步骤二：在$string后加入client\_secret
+# //签名步骤二：在$string后加入client\_secret
 
-#         $string = $string . $secret;
+# $string = $string . $secret;
 
-#         //签名步骤三：sha1加密
+# //签名步骤三：sha1加密
 
-#         $string = sha1\($string\);
+# $string = sha1\($string\);
 
-#         //签名步骤四：所有字符转为大写
+# //签名步骤四：所有字符转为大写
 
-#         $result = strtoupper\($string\);
+# $result = strtoupper\($string\);
 
-#         return $result;
+# return $result;
 
-#     }
+# }
 
-#     
+# 
 
-#     //调用
+# //调用
 
-#     $sign = getSign\(
+# $sign = getSign\(
 
-#         array\(
+# array\(
 
-#             'client\_id' =&gt; $client\_id,
+# 'client\_id' =&gt; $client\_id,
 
-#             'serial\_no' =&gt; '87000001', 
+# 'serial\_no' =&gt; '87000001',
 
-#             'timestamp' =&gt; 1487560009 
+# 'timestamp' =&gt; 1487560009
 
-#         \),
+# \),
 
-#         $secret
+# $secret
 
-#     \);
+# \);
 
 # 
 
@@ -236,7 +236,7 @@
 
 # \* 请求方式：POST
 
-# \* 请求地址：http://api.qwtong.me/v1/member/info
+# \* 请求地址：[http://api.qwtong.me/v1/member/info](http://api.qwtong.me/v1/member/info)
 
 # \* 数据格式：JSON
 
@@ -262,7 +262,7 @@
 
 # \`\`\`
 
-# POST http://api.qwtong.me/v1/member/info HTTP/1.1
+# POST [http://api.qwtong.me/v1/member/info](http://api.qwtong.me/v1/member/info) HTTP/1.1
 
 # Host: api.xunion.me
 
@@ -272,11 +272,11 @@
 
 # {
 
-#     "client\_id": "iot3355e802d44ay95yeev2",
+# "client\_id": "iot3355e802d44ay95yeev2",
 
-#     "serial\_no": "87000001",
+# "serial\_no": "87000001",
 
-#     "timestamp": 1487560009 
+# "timestamp": 1487560009
 
 # }
 
@@ -292,15 +292,15 @@
 
 # {
 
-#     "errcode": 0,
+# "errcode": 0,
 
-#     "errmsg": "success",
+# "errmsg": "success",
 
-#     "data": {
+# "data": {
 
-#         "total\_data\_value" =&gt; "10"
+# "total\_data\_value" =&gt; "10"
 
-#     } 
+# }
 
 # }
 
