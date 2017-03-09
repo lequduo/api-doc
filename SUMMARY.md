@@ -11,8 +11,9 @@
     * [查询流量卡已订购套餐信息](app/interface/member-product-info.md)
     * [查询账户基本信息](app/interface/user-info.md)
     * [查询卡密基本信息](app/interface/prepaid-card-info.md)
-    * [充值](app/interface/recharge.md)
     * [查询充值订单基本信息](app/interface/order-info.md)
+    * [查询流量卡可订购套餐信息](app/interface/product-info.md)
+    * [充值](app/interface/recharge.md)
     * [重置GPRS](app/interface/member-gprs-reset.md)
 * 错误编码
     * [errcode状态码](app/error/errorcode.md)

@@ -1,6 +1,6 @@
 ###查询充值订单基本信息
 * 请求方式：POST
-* 请求地址：http://api.qwtong.me/v1/order
+* 请求地址：http://api.qwtong.me/v1/order/info
 * 数据格式：JSON
 * 请求参数：
 
@@ -15,7 +15,7 @@ sign|string|必须|参数签名
 * 请求报文样例
 
 ```
-POST http://api.qwtong.me/v1/order HTTP/1.1
+POST http://api.qwtong.me/v1/order/info HTTP/1.1
 Host: api.xunion.me
 Content-Type: application/json
 
