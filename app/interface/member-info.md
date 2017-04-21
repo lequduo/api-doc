@@ -10,6 +10,7 @@ app_id|string|必须|客户端用户ID
 serial_no|string|必须|卡号/自定义卡号/iccid后10位
 timestamp|int|必须|接口调用时间戳
 sign|string|必须|参数签名
+data_update|bool|可选|向运营商更新流量 ["true"-更新 "false"-不更新]
 
 
 * 请求报文样例
@@ -24,6 +25,7 @@ Content-Type: application/json
 	"serial_no": "87000001",
 	"timestamp": 1488247264,
 	"sign": "D227338B98CFEFB5B4753012E92564BF202C23FE",
+	"data_update": "true",
 }
 ```
 
