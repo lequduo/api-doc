@@ -15,5 +15,7 @@
     * [查询流量卡可订购套餐信息](app/interface/product-info.md)
     * [充值](app/interface/recharge.md)
     * [重置GPRS](app/interface/member-gprs-reset.md)
+    * [发送短信](app/interface/send-message.md)
+    * [短信推送](app/interface/message-notify.md)
 * 错误编码
     * [errcode状态码](app/error/errorcode.md)
