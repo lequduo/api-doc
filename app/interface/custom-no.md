@@ -8,7 +8,7 @@
 :------------|:------------|:------------
 app_id|string|必须|客户端用户ID
 serial_no|string|必须|卡号/iccid后10位
-custom_no|int|必须|自定义卡号
+custom_no|int|必须|自定义卡号（6~16位整数）
 timestamp|int|必须|接口调用时间戳
 sign|string|必须|参数签名
 
