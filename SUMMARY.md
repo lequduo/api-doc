@@ -17,5 +17,6 @@
     * [重置GPRS](app/interface/member-gprs-reset.md)
     * [发送短信](app/interface/send-message.md)
     * [短信推送](app/interface/message-notify.md)
+    * [设置自定义卡号](app/interface/custom-no.md)
 * 错误编码
     * [errcode状态码](app/error/errorcode.md)
