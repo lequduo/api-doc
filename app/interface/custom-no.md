@@ -23,7 +23,7 @@ Content-Type: application/json
 {
 	"app_id": "iotbf42fef8f3bkgfjtxjzy",
 	"serial_no": "87000001",
-	custom_no: 123456789,
+	"custom_no": 123456789,
 	"timestamp": 1488247264,
 	"sign": "D227338B98CFEFB5B4753012E92564BF202C23FE",
 }
