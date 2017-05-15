@@ -16,7 +16,7 @@ sign|string|必须|参数签名
 * 请求报文样例
 
 ```
-POST http://api.qwtong.me/v1/member/gprs/reset HTTP/1.1
+POST http://api.qwtong.me/v1/member/custom_no HTTP/1.1
 Host: api.xunion.me
 Content-Type: application/json
 
