@@ -7,9 +7,10 @@
 参数名称|类型|是否必须|注释
 :------------|:------------|:------------
 app_id|string|必须|客户端用户ID
-timestamp|int|必须|接口调用时间戳
 serial_no|string|必须|卡号/自定义卡号/iccid后10位
 content|string|必须|短信内容
+format|int|必须|短信格式（0:ASCLL串 8:UCS2编码）
+timestamp|int|必须|接口调用时间戳
 sign|string|必须|参数签名
 
 
@@ -22,9 +23,10 @@ Content-Type: application/json
 
 {
 	"app_id" : "iotbf42fef8f3bkgfjtxjzy",
-	"timestamp" : "1488189436",
 	"serial_no" : "87000001",
 	"content" : "接口测试",
+	"format" : 0,
+	"timestamp" : 1488189436,
 	"sign" : "1CB005822179219AC4FD07320941AA9B3E45AAA9"
 }
 ```
