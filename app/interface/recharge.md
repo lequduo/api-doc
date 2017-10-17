@@ -36,11 +36,16 @@ Content-Type: application/json
 ```
 {
 	"errcode": 0,
-	"errmsg": "success"
+	"errmsg": "success",
+	"order_no": "201710171017017107051654"
 }
 ```
 * 返回说明：
 
->充值成功直接返回“success”，充值失败返回对应错误编码
+参数名称|类型|注释
+:------------|:------------|:------------
+order_no|string|订单号
+
+>“errcode”为0表示成功加入充值队列，充值结果根据订单号主动查询
 
 ---
