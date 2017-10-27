@@ -10,7 +10,7 @@
 :------------|:------------|:------------
 action|string|推送类型（固定值：'submit_resp'）
 transaction_id|string|业务流水号
-status|int|发送状态（2:发送失败 3:发送成功）
+status|int|发送状态[2-发送失败 3-发送成功]
 errmsg|string|错误信息
 
 

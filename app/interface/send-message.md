@@ -9,7 +9,7 @@
 app_id|string|必须|客户端用户ID
 serial_no|string|必须|卡号/自定义卡号/iccid后10位
 content|string|必须|短信内容
-format|int|必须|短信格式（0:ASCLL串 8:UCS2编码）
+format|int|必须|短信格式[0-ASCLL串 8-UCS2编码]
 timestamp|int|必须|接口调用时间戳
 sign|string|必须|参数签名
 

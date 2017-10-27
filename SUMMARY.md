@@ -14,6 +14,7 @@
     * [查询充值订单基本信息](app/interface/order-info.md)
     * [查询流量卡可订购套餐信息](app/interface/product-info.md)
     * [充值](app/interface/recharge.md)
+    * [开关机](app/interface/startshut.md)
     * [重置GPRS](app/interface/member-gprs-reset.md)
     * [发送短信](app/interface/send-message.md)
     * [短信推送](app/interface/message-notify.md)
