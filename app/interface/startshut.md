@@ -8,7 +8,7 @@
 :------------|:------------|:------------
 app_id|string|必须|客户端用户ID
 serial_no|string|必须|卡号/自定义卡号/iccid后10位
-action|int|必须|操作类型[1-开机 1-关机]
+action|int|必须|操作类型[1-开机 2-关机]
 timestamp|int|必须|接口调用时间戳
 sign|string|必须|参数签名
 
@@ -39,6 +39,6 @@ Content-Type: application/json
 ```
 * 返回说明：
 
->操作成功直接返回“success”，充值失败返回对应错误编码
+>操作成功直接返回“success”，操作失败返回对应错误编码
 
 ---
