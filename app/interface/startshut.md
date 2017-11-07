@@ -59,7 +59,7 @@ Content-Type: application/json
 action_type|int|回调类型 [1-充值回调 2-开关机回调]
 serial_no|string|卡号
 operate_value|string|操作类型 ["1"-开机 "2"-关机]
-status|string|订单状态 ["0"-未处理 "1"-处理中 "2"-失败 "3"-成功]
+status|string|操作状态 ["0"-未处理 "1"-处理中 "2"-失败 "3"-成功]
 errmsg|string|错误信息
 
 * 请在接收到回调后返回：
