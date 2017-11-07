@@ -39,6 +39,38 @@ Content-Type: application/json
 ```
 * 返回说明：
 
->操作成功直接返回“success”，操作失败返回对应错误编码
+>“errcode”为0表示成功加入操作队列，<font color='blue'>操作结果以回调方式返回</font>，回调地址请联系客服配置。
+
+* 回调数据样例（JSON格式）
+
+```
+{
+	"action_type": 2,
+	"serial_no": "86000000",
+	"operate_value": "1",
+	"status": "2",
+	"errmsg": "卡已过期,无法执行复机指令"
+}
+```
+* 回调数据说明：
+
+参数名称|类型|注释
+:------------|:------------|:------------
+action_type|int|回调类型 [1-充值回调 2-开关机回调]
+serial_no|string|卡号
+operate_value|string|操作类型 ["1"-开机 "2"-关机]
+status|string|订单状态 ["0"-未处理 "1"-处理中 "2"-失败 "3"-成功]
+errmsg|string|错误信息
+
+* 请在接收到回调后返回：
+
+```
+{
+	"errcode": 0,
+	"errmsg": "success",
+}
+```
+><font color='red'>返回上面数据以便确认接收到回调</font>，如未收到回调将重复回调三次
+
 
 ---

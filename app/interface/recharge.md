@@ -52,6 +52,7 @@ order_no|string|订单号
 
 ```
 {
+	"action_type": 1,
 	"order_no": "201702281435579209569730",
 	"serial_no": "86000000",
 	"product_no": "110100_1024",
@@ -64,6 +65,7 @@ order_no|string|订单号
 
 参数名称|类型|注释
 :------------|:------------|:------------
+action_type|int|回调类型 [1-充值回调 2-开关机回调]
 order_no|string|订单号
 serial_no|string|卡号
 product_no|string|套餐编码
